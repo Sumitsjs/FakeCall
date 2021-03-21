@@ -28,7 +28,7 @@ class prankCall{
 		$h[] = "Content-Length: ".strlen($post);
 		$h[] = "Host: api.grab.com";
 		$h[] = "Connection: close";
-		$ch = curl_init();
+		$ch = curl_int();
 		curl_setopt($ch, CURLOPT_URL, "https://api.grab.com/grabid/v1/phone/otp");
 		curl_setopt($ch, CURLOPT_POST, 1);
 		curl_setopt($ch, CURLOPT_POSTFIELDS, $post);
@@ -109,7 +109,7 @@ class prankCall{
 	}
 }
 
-echo "*---------- Hassan Al-Hassani ----------*\n GitHub: https://github.com/HassanSunbah\n E-mail: Hassan@HassanDesign.rf.gd\n*---------------------------------------*\n";
+echo "original code was wrong.  I corrected it.    by sumit kumar";
 echo "Phone Number: ";
 $number = enter();
 $number = new prankCall($number);
